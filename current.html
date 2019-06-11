@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Weather Information</title>
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="jumbotron" style="margin-bottom:0px; color:black; background-color: #bad465;">
+    <h2 class="text-center" style="font-size:50px; font-weight:600;">Get Current Weather</h2>
+</div>
+
+<div class="container">
+    <div class="row" style="margin-bottom: 20px;">
+        <h3 class="text-center text-primary">Enter City Name</h3>
+        <span id="error"></span>
+    </div>
+
+    <div class="row form group form-inline" id="rowDiv">
+        <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
+        <button id="submitWeather" class="btn btn-primary">Search City</button>
+    </div>
+
+    <div id="show"></div>
+
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row text-center" style="padding-top:30px;">
+            <p style="color: black; font-size:20px; font-weight: bold;">Copyright &copy; Current Weather App</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="weather.js"></script>
+
+</body>
+</html>
